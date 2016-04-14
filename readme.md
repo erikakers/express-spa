@@ -47,7 +47,7 @@ By default in Express Spa when an NPM package is installed the exact version wil
 ### Setup
 - Node.js installed via [NVM](https://github.com/creationix/nvm)
 - Clone this repo `https://github.com/erikakers/express-spa.git`
-- Run `npm setup` - This setup up the project and only need one time.
+- Run `npm run setup` - This setup up the project and only need one time.
 - Run `npm start` will configure the server based on the variables that are set in the `.env` file.
 
 ### [Styling](https://github.com/erikakers/express-spa/wiki/Styling)
