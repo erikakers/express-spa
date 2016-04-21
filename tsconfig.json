@@ -4,6 +4,7 @@
         "allowJs": true,
         "jsx": "preserve",
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "module": "commonjs"
     },
     "files": [
