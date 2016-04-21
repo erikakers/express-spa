@@ -47,7 +47,7 @@
         "precss": "1.4.0",
         "sass-loader": "3.2.0",
         "style-loader": "0.13.1",
-        "ts-loader": "0.8.1",
+        "ts-loader": "0.8.2",
         "typescript": "1.8.9",
         "typings": "0.7.9",
         "webpack": "1.12.14",
