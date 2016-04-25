@@ -6,8 +6,8 @@
     "scripts": {
         "postinstall": "typings install",
         "test": "echo \"Error: no test specified\" && exit 0",
-        "start": "babel-node ./bin/www",
-        "setup": "cp .env.example .env && npm install"
+        "start": "sudo babel-node ./bin/www",
+        "setup": "sudo cp .env.example .env && npm install"
     },
     "repository": {
         "type": "git",
