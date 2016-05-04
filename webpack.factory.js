@@ -15,7 +15,7 @@ module.exports = (options) => {
     return {
         entry: entry(options),
         resolve: resolve(options),
-        output: output(),
+        output: output(options),
         plugins: plugins(options),
         module: {
             preLoaders: preloaders(options),
@@ -74,12 +74,19 @@ function resolve(options) {
 /*
     Returns Webpack's Output Object Configuation
  */
-function output() {
-    return {
-        path: path.join(__dirname, 'public'),
-        filename: 'app.js',
-        publicPath: '/assets/'
-    };
+function output(options) {
+    if (options.env === 'production') {
+        return {
+            path: path.join(__dirname, 'public', 'assets'),
+            filename: 'app.js'
+        };
+    } else { // eslint-disable-line
+        return {
+            path: path.join(__dirname, 'public'),
+            filename: 'app.js',
+            publicPath: '/assets/'
+        };
+    }
 }
 
 /*

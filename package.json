@@ -1,74 +1,76 @@
 {
-    "name": "express-spa",
-    "version": "0.0.0",
-    "description": "An Express Server specifically for SPAs with Webpack and Typescript support.",
-    "main": "index.js",
-    "scripts": {
-        "postinstall": "typings install",
-        "test": "echo \"Error: no test specified\" && exit 0",
-        "start": "babel-node ./bin/www",
-        "setup": "cp .env.example .env && npm install"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://erikakers@github.com/erikakers/express-spa.git"
-    },
-    "keywords": [
-        "Express",
-        "Node",
-        "SPA",
-        "Typescript",
-        "Webpack"
+  "name": "express-spa",
+  "version": "0.0.0",
+  "description": "An Express Server specifically for SPAs with Webpack and Typescript support.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "typings install",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prestart": "rm -rf public/assets",
+    "start": "babel-node ./bin/www",
+    "setup": "cp .env.example .env && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://erikakers@github.com/erikakers/express-spa.git"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "SPA",
+    "Typescript",
+    "Webpack"
+  ],
+  "author": "Erik Akers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikakers/express-spa/issues"
+  },
+  "homepage": "https://github.com/erikakers/express-spa#readme",
+  "dependencies": {
+    "autoprefixer": "6.3.5",
+    "babel-cli": "6.6.5",
+    "babel-core": "6.7.2",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-stage-1": "6.5.0",
+    "css-loader": "0.23.1",
+    "dotenv": "2.0.0",
+    "eslint": "2.4.0",
+    "eslint-config-vml": "0.1.7",
+    "eslint-loader": "1.3.0",
+    "express": "4.13.4",
+    "extract-text-webpack-plugin": "1.0.1",
+    "kraken-js": "2.1.0",
+    "lodash": "4.6.1",
+    "morgan": "1.7.0",
+    "node-sass": "3.5.3",
+    "postcss-loader": "0.8.2",
+    "precss": "1.4.0",
+    "sass-loader": "3.2.0",
+    "style-loader": "0.13.1",
+    "ts-loader": "0.8.1",
+    "typescript": "1.8.9",
+    "typings": "0.7.9",
+    "webpack": "1.12.14",
+    "webpack-dev-middleware": "1.5.1",
+    "webpack-hot-middleware": "2.10.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-1"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "vml/base"
     ],
-    "author": "Erik Akers",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/erikakers/express-spa/issues"
-    },
-    "homepage": "https://github.com/erikakers/express-spa#readme",
-    "dependencies": {
-        "autoprefixer": "6.3.5",
-        "babel-cli": "6.6.5",
-        "babel-core": "6.7.2",
-        "babel-loader": "6.2.4",
-        "babel-preset-es2015": "6.6.0",
-        "babel-preset-stage-1": "6.5.0",
-        "css-loader": "0.23.1",
-        "dotenv": "2.0.0",
-        "eslint": "2.4.0",
-        "eslint-config-vml": "0.1.7",
-        "eslint-loader": "1.3.0",
-        "express": "4.13.4",
-        "extract-text-webpack-plugin": "1.0.1",
-        "lodash": "4.6.1",
-        "morgan": "1.7.0",
-        "node-sass": "3.5.3",
-        "postcss-loader": "0.8.2",
-        "precss": "1.4.0",
-        "sass-loader": "3.2.0",
-        "style-loader": "0.13.1",
-        "ts-loader": "0.8.1",
-        "typescript": "1.8.9",
-        "typings": "0.7.9",
-        "webpack": "1.12.14",
-        "webpack-dev-middleware": "1.5.1",
-        "webpack-hot-middleware": "2.10.0"
-    },
-    "babel": {
-        "presets": [
-            "es2015",
-            "stage-1"
-        ]
-    },
-    "eslintConfig": {
-        "extends": [
-            "vml/base"
-        ],
-        "globals": {
-            "process": true,
-            "__dirname": true,
-            "describe": true,
-            "it": true
-        }
+    "globals": {
+      "process": true,
+      "__dirname": true,
+      "describe": true,
+      "it": true
     }
+  }
 }
