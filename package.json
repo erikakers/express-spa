@@ -72,5 +72,8 @@
       "describe": true,
       "it": true
     }
+  },
+  "devDependencies": {
+    "npm-install-webpack-plugin": "4.0.4"
   }
 }
