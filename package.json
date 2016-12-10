@@ -44,7 +44,7 @@
     "kraken-js": "2.1.0",
     "lodash": "4.15.0",
     "morgan": "1.7.0",
-    "node-sass": "3.9.3",
+    "node-sass": "4.0.0",
     "postcss-loader": "0.13.0",
     "precss": "1.4.0",
     "sass-loader": "4.0.2",
