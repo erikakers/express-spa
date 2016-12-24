@@ -42,7 +42,7 @@
     "express": "4.14.0",
     "extract-text-webpack-plugin": "1.0.1",
     "kraken-js": "2.1.0",
-    "lodash": "4.15.0",
+    "lodash": "4.17.3",
     "morgan": "1.7.0",
     "node-sass": "3.9.3",
     "postcss-loader": "0.13.0",
